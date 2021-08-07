@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./Images/icon.png" type="image/icon type sizes=16x16">
+    <link rel="stylesheet" href="./css/style.css">
+  
+
+    
+
+    
+    <title>SIGNUP</title>
+</head>
+<header>
+  <div class="navbar">
+    <h2>DR. TRUPTI SHAH</h2>
+      <div class="bars">
+        <div class="iconbar"></div>
+        <div class="iconbar"></div>
+        <div class="iconbar"></div>
+      </div>
+      
+      <div class="sidebar__content">
+        <a href="#" id='login'>LOGIN</a>
+        <a href="messages.html" id='messages__navbar' style="display:none">MESSAGES</a>
+        <a href="index.html" >HOME</a>
+        <a href="signup.html" id='signup__navbar' style="display:none">CREATE USER</a>
+        <a href="#" id='users__navbar' style="display:none">USERS</a>
+        <a href="profile.html" id='nav_profile' style="display:none">PROFILE</a>
+        <a href="diet.html" id='nav_diet' style="display:none">DIET</a>
+        <a href="services.html">SERVICES</a>
+        <a href="thesis.html">E-BOOK</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html" id="contact">CONTACT</a>
+        
+        <a href="#" class='logout' style="border: none;">LOGOUT</a>
+      </div></div>
+    <a href="#" class='button'>LOGIN</a>
+    <div class='profile' style="display:none"><a href = '#' style="justify-self: center;" ><i class="fa fa-user-circle-o"></i></a> 
+    <div class="dropdown-content">
+      <a href="signup.html" id='signup' style="display:none">CREATE USER</a>
+        <a href="#" id='users' style="display:none">USERS</a>
+        <a href="profile.html" id='profile'>PROFILE</a>
+        <a href="diet.html" id="diet">DIETS</a>
+      <a href="messages.html" id='messages' style="display:none">MESSAGES</a>
+        <a href="#" class='logout' style="border: none;">LOGOUT</a>
+      </div></div>
+      
+    <nav>
+        <a href="index.html" class='selected'>HOME</a>
+        <a href="services.html">SERVICES</a>
+        <a href="thesis.html">E-BOOK</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+  <div id="id01" class="modal">
+        
+    <div class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="./Images/img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname" style='justify-self: center; '><b>Phone Number</b></label><br>
+        <input type="text" placeholder="Ex. +918169287917" id='phone' name="uname" required><br>
+  
+        <label id='otp__label' for="psw" style='justify-self: center; ' ><b>OTP</b></label><br>
+        <input type="password" placeholder="Enter OTP" id='otp' name="psw" >
+          
+        <button  id='submit' class='login' type="submit">SEND OTP</button>
+        <button  id='confirm' class='login' style='display:none;' type="submit">CONFIRM OTP</button>
+      </div>
+    </div>
+  </div>  
+</header>
+<body class='signup__body'>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'personal')">PERSONAL</button>
+    <button class="tablinks" onclick="openCity(event, 'daily')">DAILY SCHEDULE</button>
+    <button class="tablinks" onclick="openCity(event, 'diagnosis')">DIAGNOSIS</button>
+    <button class="tablinks" onclick="openCity(event, 'sugges')">SUGGESTION /TREATMENT</button>
+    <button class="tablinks" onclick="openCity(event, 'suggestdiet')">SUGGESTED DIET</button>
+  </div>
+    <div class='form__container'>
+        <div class="form" id='personal'>
+            <div><h2>PERSONAL </h2></div>
+            <input type="text" name="Name" placeholder="Name">
+            <input type="text"  name="phoneNumber" placeholder="Phone Number ( ex. 8169287917)">
+            <input type="text" name="Age" placeholder="Age" >
+            <input type="text" name="Weight" placeholder="Weight">
+            <select name="Gender" id="gender">
+                <option value="Gender">GENDER</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" placeholder="B.P" name="bloodpressure" >
+            
+            <textarea name="history" placeholder="history" id="" cols="30" rows="8"></textarea>
+            <textarea name="medication" id="" placeholder="medication" cols="30" rows="8"></textarea>
+            <textarea name="Symptoms" id="" placeholder="Symptoms" cols="30" rows="8"></textarea>
+
+        </div>
+        <div class="form" id='daily'>
+            <div><h2>DAILY SCHEDULE </h2></div>
+            <input type="text" placeholder="TIME" name="time"><input type="text" placeholder="ACTIVITY" name="content">
+            <input type="text" placeholder="TIME" name="time"><input type="text" placeholder="ACTIVITY" name="content">
+            <input type="text" placeholder="TIME" name="time"><input type="text" placeholder="ACTIVITY" name="content">
+            <input type="text" placeholder="TIME" name="time"><input type="text" placeholder="ACTIVITY" name="content">
+            <input type="text" placeholder="TIME" name="time"><input type="text" placeholder="ACTIVITY" name="content">
+            <input type="text"placeholder="TIME" name="time"><input type="text" placeholder="ACTIVITY" name="content">
+            <input type="text" placeholder="TIME" name="time"><input type="text" placeholder="ACTIVITY" name="content">
+
+        </div>
+        <div class="form " id='diagnosis'>
+            <div><h2>DIAGNOSIS </h2></div>
+
+            <label for="Urine">Urine</label><br><textarea name="Urine"  placeholder="Urine" cols="30" rows="4"></textarea>
+            <br><label for="Stool">Stool</label><br><textarea name="Stool"  placeholder="Stool" cols="30" rows="4"></textarea><br>
+            <br><label for="Hunger">Hunger</label><input type="text"  name="Hunger"  placeholder="Hunger">
+            <label for="thirst">thirst</label><input type="text"  name="thirst" placeholder="thirst" ><br>
+            <label for="tongue">tongue</label><input type="text" name="tongue"  placeholder="tongue">
+            <label for="teeth">teeth</label><input type="text"  name="teeth"  placeholder="teeth"><br><br>
+            <label for="prakruti">Prakruti:</label><br><br>
+            <label for="Vata">Vata</label>&nbsp;<input type="radio"  name="prakruti" value="Vata">
+            <label for="Pitta">Pitta</label>&nbsp;<input type="radio" name="prakruti" value="Pitta">
+            <label for="Cough">Cough</label>&nbsp;<input type="radio"  name="prakruti" value="Cough"><br>
+            <br><label for="mences">mences</label><br><textarea name="mences"  placeholder="mences" cols="30" rows="2"></textarea><br>
+            <select id="Fingers">
+              <option value="Fingers">Fingers</option>
+              <option value="Agni">Agni</option>
+              <option value="Vaayu">Vaayu</option>
+              <option value="Aakash">Aakash</option>
+              <option value="Prithvi">Prithvi</option>
+              <option value="Jal">Jal</option>  
+          </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <select id="bodypart">
+            <option value="Prana">Prana</option>
+            <option value="Udaan">Udaan</option>
+            <option value="Samaan">Samaan</option>
+            <option value="Apaan">Apaan</option>
+            <option value="Vyaan">Vyaan</option>  
+        </select>
+        
+            
+        </div>
+        <div class="form" id='sugges'>
+            <h2>SUGGESTION /TREATMENT</h2>
+            <div><input type="text" name="TREATMENT" placeholder="Suggestion / treatment" id="therapy1"></div>
+            <div><input type="text" name="TREATMENT" placeholder="Suggestion / treatment" id="therapy2"></div>
+            <div><input type="text" name="TREATMENT" placeholder="Suggestion / treatment" id="therapy3"></div>
+            <div><input type="text" name="TREATMENT" placeholder="Suggestion / treatment" id="therapy4"></div>
+        </div>
+        <div class="form" id='suggestdiet'>
+            <h2>SUGGESTED DIET</h2>
+            <div><input type="time" placeholder="TIME" name="diet__time"><input type="text" placeholder="food" id='recipe1' name="dish"></div>
+            <div><input type="time" placeholder="TIME" name="diet__time"><input type="text" placeholder="food" id='recipe2' name="dish"></div>
+            <div><input type="time" placeholder="TIME" name="diet__time"><input type="text" placeholder="food" id='recipe3' name="dish"></div>
+            <div><input type="time" placeholder="TIME" name="diet__time"><input type="text" placeholder="food" id='recipe4' name="dish"></div>
+            <div><input type="time" placeholder="TIME" name="diet__time"><input type="text" placeholder="food" id='recipe5' name="dish"></div>
+            <div><input type="time" placeholder="TIME" name="diet__time"><input type="text" placeholder="food" id='recipe6' name="dish"></div>
+            <div><input type="time" placeholder="TIME" name="diet__time"><input type="text" placeholder="food" id='recipe7' name="dish"></div>
+        </div>
+    </div>
+    <div class="button sigup__button">CREATE A NEW USER</div>
+</body>
+<script   src="/__/firebase/7.17.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        
+    <script   src="/__/firebase/7.17.2/firebase-analytics.js"></script>
+    <script   src="/__/firebase/7.17.2/firebase-auth.js"></script>
+    <script   src="/__/firebase/7.17.2/firebase-firestore.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script   src="/__/firebase/init.js"></script>
+<script src="./scripts/index.js"></script>
+<script src="./scripts/signup.js"></script>
+</html>

@@ -1,0 +1,10 @@
+# Group 1
+User-agent: *
+Disallow: /messages/
+Disallow:/signup/
+
+# Group 2
+User-agent: *
+Allow: /
+
+Sitemap: http://drtruptishah.com/sitemap.xml
